@@ -1,23 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
+import AddPhotoAlternateOutlinedIcon from "@mui/icons-material/AddPhotoAlternateOutlined";
+import HomeRoundedIcon from "@mui/icons-material/HomeRounded";
+import ContactMailRoundedIcon from "@mui/icons-material/ContactMailRounded";
+import MailSharpIcon from "@mui/icons-material/MailSharp";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{display: 'flex', justifyContent: 'space-evenly', marginTop: 70}}>
+      <AddShoppingCartIcon fontSize="large" />
+      <AddPhotoAlternateOutlinedIcon fontSize="large" />
+      <HomeRoundedIcon fontSize="large" />
+      <ContactMailRoundedIcon fontSize="large" />
+      <MailSharpIcon fontSize="large" />
     </div>
   );
 }
