@@ -1,5 +1,6 @@
 import "../styles/sidebar.css";
 import SideBarLink from "./SideBarLink";
+import Button from '@mui/material/Button';
 import HomeIcon from "@mui/icons-material/Home";
 import SearchIcon from "@mui/icons-material/Search";
 import NotificationsNoneIcon from "@mui/icons-material/NotificationsNone";
@@ -8,6 +9,7 @@ import BookmarkBorderIcon from "@mui/icons-material/BookmarkBorder";
 import ListAltIcon from "@mui/icons-material/ListAlt";
 import PermIdentityIcon from "@mui/icons-material/PermIdentity";
 import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
+
 
 const Sidebar = () => {
 return (
@@ -21,6 +23,9 @@ return (
     <SideBarLink text="Lists" Icon={ListAltIcon} />
     <SideBarLink text="Profile" Icon={PermIdentityIcon} />
     <SideBarLink text="More" Icon={MoreHorizIcon} />
+    <Button id='tweet'>
+        Tweet
+    </Button>
 </div>
 );
 };
